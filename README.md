@@ -6,7 +6,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 * How to select the best sorting algorithm for a given input
 * What is a stable sorting algorithm
 
-##Tasks
+## Tasks
 
 ### 0. Bubble Sort
 Write a function that sorts an array of integers in ascending order using the Bubble sort algorithm
