@@ -23,6 +23,7 @@ void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
 /*Task 1. Insertion Sort*/
 void insertion_sort_list(listint_t **list);
+void swap_node(listint_t *node1, listint_t *node2);
 /*Task 2. Selection Sort*/
 void selection_sort(int *array, size_t size);
 /*Task 3. Quick Sort*/
