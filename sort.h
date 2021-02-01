@@ -28,5 +28,7 @@ void swap_node(listint_t *node1, listint_t *node2);
 void selection_sort(int *array, size_t size);
 /*Task 3. Quick Sort*/
 void quick_sort(int *array, size_t size);
+void quick_sort_helper(int *array, int lo, int hi, size_t size);
+int quick_sort_partition(int *array, int lo, int hi, size_t size);
 
 #endif
