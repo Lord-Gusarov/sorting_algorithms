@@ -53,19 +53,19 @@ int quick_sort_partition(int *array, int lo, int hi, size_t size)
 	int pivot = array[hi], aux;
 	int i = lo, j;
 
-	for (j = lo; j < hi; j++)
+	for (j = lo; j <= hi; j++)
 	{
 		if (array[j] < pivot)
 		{
 			aux = array[i];
 			array[i] = array[j];
 			array[j] = aux;
-			print_array(array, size);
 			i++;
 		}
 	}
 	aux = array[i];
 	array[i] = array[hi];
 	array[hi] = aux;
+	print_array(array, size);
 	return (i);
 }
