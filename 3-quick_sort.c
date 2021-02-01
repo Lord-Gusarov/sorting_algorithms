@@ -37,7 +37,7 @@ void quick_sort_helper(int *array, int lo, int hi, size_t size)
 }
 
 /**
- * quick_sort_partition - takes an aarray and two indixes representing a
+ * quick_sort_partition - takes an array and two indixes representing a
  * the point of a partition. Wihing these indexes the function will swap
  * values and return the index reference for the next partitions
  *
@@ -50,22 +50,39 @@ void quick_sort_helper(int *array, int lo, int hi, size_t size)
  */
 int quick_sort_partition(int *array, int lo, int hi, size_t size)
 {
-	int pivot = array[hi], aux;
+	int pivot = array[hi];
 	int i = lo, j;
 
-	for (j = lo; j <= hi; j++)
+	for (j = lo; j < hi; j++)
 	{
 		if (array[j] < pivot)
 		{
-			aux = array[i];
-			array[i] = array[j];
-			array[j] = aux;
+			swap_in_array(array, i, j, size);
 			i++;
 		}
 	}
-	aux = array[i];
-	array[i] = array[hi];
-	array[hi] = aux;
-	print_array(array, size);
+	swap_in_array(array, i, hi, size);
 	return (i);
+}
+
+/**
+ * swap_in_array - swaps two elements in an array only if their value is not
+ * the same
+ *
+ * @array: array in wich to swap
+ * @idx1: first index
+ * @idx2: second index
+ * @size: size of the array
+ */
+void swap_in_array(int *array, int idx1, int idx2, size_t size)
+{
+	int aux;
+
+	if (array[idx1] != array[idx2])
+	{
+		aux = array[idx1];
+		array[idx1] = array[idx2];
+		array[idx2] = aux;
+		print_array(array, size);
+	}
 }
