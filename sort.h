@@ -34,5 +34,9 @@ void swap_in_array(int *array, int idx1, int idx2, size_t size);
 
 /*Task 4. Shell sort (AKA #100)*/
 void shell_sort(int *array, size_t size);
-
+/*Task 5. Cocktail shaker sort (AKA 101)*/
+void cocktail_sort_list(listint_t **list);
+/*====Task 5 reuses the prototype swap_node(..) from task 1=====*/
+/*Task 6. Counting sort (AKA 102)*/
+void counting_sort(int *array, size_t size);
 #endif
