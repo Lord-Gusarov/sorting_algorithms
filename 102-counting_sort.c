@@ -39,7 +39,7 @@ void counting_sort(int *array, size_t size)
 	{
 		x = array[s];
 		out[count[x] - 1] = x;
-		count[x] += 1;
+		count[x] -= 1;
 	}
 
 	for (s = 0; s < size; s++)
@@ -47,4 +47,4 @@ void counting_sort(int *array, size_t size)
 
 	free(count);
 	free(out);
-}
+
