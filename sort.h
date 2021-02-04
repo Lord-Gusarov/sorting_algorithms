@@ -1,6 +1,7 @@
 #ifndef _SORT_H_
 #define _SORT_H_
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -39,4 +40,9 @@ void cocktail_sort_list(listint_t **list);
 /*====Task 5 reuses the prototype swap_node(..) from task 1=====*/
 /*Task 6. Counting sort (AKA 102)*/
 void counting_sort(int *array, size_t size);
+/*Task 7. Merge sort (AKA 103)*/
+void merge_sort(int *array, size_t size);
+void TopDownSplitMerge(int *aux, int s_idx, int f_idx, int *array);
+void TopDownMerge(int *arr1, int s_idx, int mid_idx, int f_idx, int *arr2);
+void print_split_merge(int *arr, char *str, int s_idx, int f_idx);
 #endif
