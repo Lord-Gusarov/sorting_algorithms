@@ -52,4 +52,6 @@ void shift_down(int *array, size_t root, size_t f_idx, size_t size);
 /*Task 9. Radix sort*/
 void radix_sort(int *array, size_t size);
 void countSort(int *arr, size_t n, int exp);
+/*Task 10 Quick sort *Hoare scheme* (AKA 107)*/
+void quick_sort_hoare(int *array, size_t size);
 #endif
