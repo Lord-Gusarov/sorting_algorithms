@@ -49,4 +49,7 @@ void print_split_merge(int *arr, char *str, int s_idx, int f_idx);
 void heap_sort(int *array, size_t size);
 void heapify(int *array, size_t size);
 void shift_down(int *array, size_t root, size_t f_idx, size_t size);
+/*Task 9. Radix sort*/
+void radix_sort(int *array, size_t size);
+void countSort(int *arr, size_t n, int exp);
 #endif
