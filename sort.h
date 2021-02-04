@@ -45,4 +45,8 @@ void merge_sort(int *array, size_t size);
 void TopDownSplitMerge(int *aux, int s_idx, int f_idx, int *array);
 void TopDownMerge(int *arr1, int s_idx, int mid_idx, int f_idx, int *arr2);
 void print_split_merge(int *arr, char *str, int s_idx, int f_idx);
+/*Task 8. Heap sort (AKA 104)*/
+void heap_sort(int *array, size_t size);
+void heapify(int *array, size_t size);
+void shift_down(int *array, size_t root, size_t f_idx, size_t size);
 #endif
