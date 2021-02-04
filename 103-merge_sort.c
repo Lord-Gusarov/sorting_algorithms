@@ -48,17 +48,17 @@ void TopDownSplitMerge(int *aux, int s_idx, int f_idx, int *array)
 	TopDownSplitMerge(array, s_idx, mid_idx, aux);
 	TopDownSplitMerge(array, mid_idx, f_idx, aux);
 
-	TopDownMerge(aux, s_idx, mid_idx, f_idx, array);
+	TopDownMerge(array, s_idx, mid_idx, f_idx, aux);
 }
 
 /**
  * TopDownMerge - merges arrays splits during the TopDown Merge sort
  *
- * @arr1: array to merge from
+ * @arr1: array to merge TO
  * @s_idx: starting index
  * @mid_idx: midlle index
  * @f_idx: finishing index
- * @arr2: array to merge TO
+ * @arr2: array to merge FROM
  */
 void TopDownMerge(int *arr1, int s_idx, int mid_idx, int f_idx, int *arr2)
 {
